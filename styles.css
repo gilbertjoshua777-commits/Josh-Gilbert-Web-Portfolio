@@ -5,17 +5,26 @@
 }
 
 body {
-  font-size: ;
-  font: ;
-  color: ;
-  line-height: ;
-  padding-left: ;
-  padding-right: ;
-  padding-top: ;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 16px; 
+  color:#333;
+  line-height: 1.6;
+  padding: 20px;
   background-color: aqua;
 }
 
 
 header {
-    
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
 }
