@@ -45,5 +45,10 @@ img {
 .project {
     padding: 20px;
     margin-bottom: 30px;
-    border: 1px solid #ccc;
+    border: 5px solid #e1f506;
+}
+
+
+.project a {
+    margin-right: 15px;
 }
