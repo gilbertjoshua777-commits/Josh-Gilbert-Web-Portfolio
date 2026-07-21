@@ -40,3 +40,9 @@ img {
     max-width: 600px;
     height: auto;
 }
+
+
+.project {
+    padding: 20px;
+    margin-bottom: 30px;
+}
