@@ -17,6 +17,9 @@ body {
 header {
     position: sticky;
     top: 0;
+    background-color: #02354af8;
+    color: #003366;
+    padding: 30px;
 }
 
 nav {
@@ -28,6 +31,14 @@ nav ul {
     justify-content: space-evenly;
     gap: 20px;
 }
+
+nav a {
+    color:white;
+    font:2rem;
+}
+
+
+
 
 
 img {
@@ -45,10 +56,8 @@ img {
 .project {
     padding: 20px;
     margin-bottom: 30px;
-    border: 5px solid #e1f506;
-}
-
-
-.project a {
+    border: 5px solid darkblue;
     margin-right: 15px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
 }
