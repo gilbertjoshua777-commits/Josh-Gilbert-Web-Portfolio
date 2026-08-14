@@ -14,6 +14,9 @@ nextButton.addEventListener("click", function() {
     }
 
     categoryName.textContent = categories[currentCategory];
+
+    displayProjects();
+
 });
 
 prevButton.addEventListener("click", function() {
@@ -24,6 +27,9 @@ prevButton.addEventListener("click", function() {
     }
 
     categoryName.textContent = categories[currentCategory];
+
+    displayProjects();
+
 });
 
 
