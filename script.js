@@ -63,11 +63,11 @@ const projects = [
     }
 ];
 
-
-
+{
+function displayProjects()
 const projectList = document.querySelector("#project-list");
 
-function displayProjects() {
+ 
 projects.forEach(function(project) {
     if (project.genre === categories[currentCategory]) {
     projectList.innerHTML += `
