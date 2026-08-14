@@ -15,3 +15,13 @@ nextButton.addEventListener("click", function() {
 
     categoryName.textContent = categories[currentCategory];
 });
+
+prevButton.addEventListener("click", function() {
+    currentCategory = currentCategory - 1;
+
+    if (currentCategory < 0) {
+        currentCategory = categories.length - 1;
+    }
+
+    categoryName.textContent = categories[currentCategory];
+});
