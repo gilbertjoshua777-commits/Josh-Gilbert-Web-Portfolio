@@ -61,7 +61,9 @@ const projects = [
 
 const projectList = document.querySelector("#project-list");
 
+function displayProjects() {
 projects.forEach(function(project) {
+    if (project.genre === categories[currentCategory]) {
     projectList.innerHTML += `
         <section class="project">
             <h2>${project.title}</h2>
@@ -84,4 +86,9 @@ projects.forEach(function(project) {
             </p>
         </section>
     `;
+    }
+
 });
+}
+
+displayProjects();
