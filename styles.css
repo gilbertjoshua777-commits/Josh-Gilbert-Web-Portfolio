@@ -70,6 +70,15 @@ img {
     justify-content: center;
 }
 
+.category-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+
 #prev-category,
 #next-category {
     font-size: 32px;
@@ -89,8 +98,6 @@ img {
 #next-category {
     margin-left: 20px;
 }
-
-
 
 
 
