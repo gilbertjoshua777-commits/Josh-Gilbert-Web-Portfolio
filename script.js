@@ -1,6 +1,5 @@
 const prevButton = document.querySelector("#prev-category");
 const nextButton = document.querySelector("#next-category");
-const categoryName = document.querySelector("#category-name");
 
 let currentProject = 0;
 
@@ -28,7 +27,7 @@ const projects = [
         genre: "Course Projects",
         description: "A responsive website for a fictional archery business, built from client requirements with an emphasis on accessibility and responsive design.",
         image: "images/straight-to-the-point-archery-screenshot.jpg",
-        technologies: ["HTML", "CSS", "Javascript", "Git", "GitHub"],
+        technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
         liveSite: "https://gilbertjoshua777-commits.github.io/straight-to-the-point-archery/about.html",
         github: "https://github.com/gilbertjoshua777-commits/straight-to-the-point-archery"
     }
@@ -57,8 +56,6 @@ prevButton.addEventListener("click", function() {
     displayProjects();
 
 });
-
-
 
 
 function displayProjects() {
