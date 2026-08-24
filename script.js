@@ -63,38 +63,37 @@ const projects = [
     }
 ];
 
-{
-function displayProjects()
-const projectList = document.querySelector("#project-list");
+function displayProjects() {
+    const projectList = document.querySelector("#project-list");
 
- 
-projects.forEach(function(project) {
-    if (project.genre === categories[currentCategory]) {
-    projectList.innerHTML += `
-        <section class="project">
-            <h2>${project.title}</h2>
+    projectList.innerHTML = "";
 
-            <img src="${project.image}" alt="${project.title}">
+    projects.forEach(function(project) {
+        if (project.genre === categories[currentCategory]) {
+            projectList.innerHTML += `
+                <section class="project">
+                    <h2>${project.title}</h2>
 
-            <p>${project.description}</p>
+                    <img src="${project.image}" alt="${project.title}">
 
-            <h3>Technologies Used</h3>
+                    <p>${project.description}</p>
 
-            <ul>
-                ${project.technologies.map(function(technology) {
-                    return `<li>${technology}</li>`;
-                }).join("")}
-            </ul>
+                    <h3>Technologies Used</h3>
 
-            <p>
-                <a href="${project.liveSite}" target="_blank">Live Site</a> |
-                <a href="${project.github}" target="_blank">GitHub Repository</a>
-            </p>
-        </section>
-    `;
-    }
+                    <ul>
+                        ${project.technologies.map(function(technology) {
+                            return `<li>${technology}</li>`;
+                        }).join("")}
+                    </ul>
 
-});
+                    <p>
+                        <a href="${project.liveSite}" target="_blank">Live Site</a> |
+                        <a href="${project.github}" target="_blank">GitHub Repository</a>
+                    </p>
+                </section>
+            `;
+        }
+    });
 }
 
 displayProjects();
