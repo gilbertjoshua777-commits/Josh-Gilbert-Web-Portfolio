@@ -5,13 +5,11 @@ const categoryName = document.querySelector("#category-name");
 let currentProject = 0;
 
 nextButton.addEventListener("click", function() {
-    currentCategory = currentCategory + 1;
+    currentProject = currentProject + 1;
 
-    if (currentCategory >= categories.length) {
-        currentCategory = 0;
+    if (currentProject >= projects.length) {
+        currentProject = 0;
     }
-
-    categoryName.textContent = categories[currentCategory];
 
     displayProjects();
 
