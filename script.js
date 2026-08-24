@@ -57,7 +57,7 @@ const projects = [
         genre: "Course Projects",
         description: "A responsive website for a fictional archery business, built from client requirements with an emphasis on accessibility and responsive design.",
         image: "images/straight-to-the-point-archery-screenshot.jpg",
-        technologies: ["HTML", "CSS", "JS", "Git", "GitHub"],
+        technologies: ["HTML", "CSS", "Javascript", "Git", "GitHub"],
         liveSite: "https://gilbertjoshua777-commits.github.io/straight-to-the-point-archery/about.html",
         github: "https://github.com/gilbertjoshua777-commits/straight-to-the-point-archery"
     }
