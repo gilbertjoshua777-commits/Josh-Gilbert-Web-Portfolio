@@ -4,29 +4,6 @@ const categoryName = document.querySelector("#category-name");
 
 let currentProject = 0;
 
-nextButton.addEventListener("click", function() {
-    currentProject = currentProject + 1;
-
-    if (currentProject >= projects.length) {
-        currentProject = 0;
-    }
-
-    displayProjects();
-
-});
-
-prevButton.addEventListener("click", function() {
-    currentProject = currentProject - 1;
-
-    if (currentProject < 0) {
-        currentProject = projects.length - 1;
-    }
-
-    displayProjects();
-
-});
-
-
 const projects = [
     {
         title: "Why Art Matters",
@@ -57,37 +34,62 @@ const projects = [
     }
 ];
 
+
+
+nextButton.addEventListener("click", function() {
+    currentProject = currentProject + 1;
+
+    if (currentProject >= projects.length) {
+        currentProject = 0;
+    }
+
+    displayProjects();
+
+});
+
+prevButton.addEventListener("click", function() {
+    currentProject = currentProject - 1;
+
+    if (currentProject < 0) {
+        currentProject = projects.length - 1;
+    }
+
+    displayProjects();
+
+});
+
+
+
+
 function displayProjects() {
     const projectList = document.querySelector("#project-list");
 
     projectList.innerHTML = "";
 
-    projects.forEach(function(project) {
-        if (project.genre === categories[currentCategory]) {
-            projectList.innerHTML += `
-                <section class="project">
-                    <h2>${project.title}</h2>
+    const project = projects[currentProject];
 
-                    <img src="${project.image}" alt="${project.title}">
+projectList.innerHTML = `
+    <section class="project">
+        <h2>${project.title}</h2>
 
-                    <p>${project.description}</p>
+        <img src="${project.image}" alt="${project.title}">
 
-                    <h3>Technologies Used</h3>
+        <p>${project.description}</p>
 
-                    <ul>
-                        ${project.technologies.map(function(technology) {
-                            return `<li>${technology}</li>`;
-                        }).join("")}
-                    </ul>
+        <h3>Technologies Used</h3>
 
-                    <p>
-                        <a href="${project.liveSite}" target="_blank">Live Site</a> |
-                        <a href="${project.github}" target="_blank">GitHub Repository</a>
-                    </p>
-                </section>
-            `;
-        }
-    });
+        <ul>
+            ${project.technologies.map(function(technology) {
+                return `<li>${technology}</li>`;
+            }).join("")}
+        </ul>
+
+        <p>
+            <a href="${project.liveSite}" target="_blank">Live Site</a> |
+            <a href="${project.github}" target="_blank">GitHub Repository</a>
+        </p>
+    </section>
+`;
 }
 
 displayProjects();
