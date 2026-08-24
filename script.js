@@ -16,13 +16,11 @@ nextButton.addEventListener("click", function() {
 });
 
 prevButton.addEventListener("click", function() {
-    currentCategory = currentCategory - 1;
+    currentProject = currentProject - 1;
 
-    if (currentCategory < 0) {
-        currentCategory = categories.length - 1;
+    if (currentProject < 0) {
+        currentProject = projects.length - 1;
     }
-
-    categoryName.textContent = categories[currentCategory];
 
     displayProjects();
 
