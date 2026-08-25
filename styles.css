@@ -133,3 +133,16 @@ img {
 footer {
     margin-top: 40px;
 }
+
+
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+}
