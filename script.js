@@ -21,7 +21,8 @@ const projects = [
         image: "images/straight-to-the-point-archery-screenshot.jpg",
         technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
         liveSite: "https://gilbertjoshua777-commits.github.io/straight-to-the-point-archery/about.html",
-        github: "https://github.com/gilbertjoshua777-commits/straight-to-the-point-archery"
+        github: "https://github.com/gilbertjoshua777-commits/straight-to-the-point-archery",
+        figma: https://www.figma.com/design/41jxNVBnwpFfuDuHg3lxrJ/Figma-basics?node-id=624-9&t=zy6fc2wD9NMhZlU2-1
     }
 ];
 
@@ -74,9 +75,11 @@ projectList.innerHTML = `
         </ul>
 
         <p>
-            <a href="${project.liveSite}" target="_blank">Live Site</a> |
-            <a href="${project.github}" target="_blank">GitHub Repository</a>
-        </p>
+    <a href="${project.liveSite}" target="_blank">Live Site</a> |
+    <a href="${project.github}" target="_blank">GitHub Repository</a> |
+    <a href="${project.figma}" target="_blank">Figma Design</a>
+</p>
+
     </section>
 `;
 }
