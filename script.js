@@ -22,7 +22,7 @@ const projects = [
         technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
         liveSite: "https://gilbertjoshua777-commits.github.io/straight-to-the-point-archery/about.html",
         github: "https://github.com/gilbertjoshua777-commits/straight-to-the-point-archery",
-        figma: https://www.figma.com/design/41jxNVBnwpFfuDuHg3lxrJ/Figma-basics?node-id=624-9&t=zy6fc2wD9NMhZlU2-1
+        figma: "https://www.figma.com/design/41jxNVBnwpFfuDuHg3lxrJ/Figma-basics?node-id=624-9&t=zy6fc2wD9NMhZlU2-1"
     }
 ];
 
