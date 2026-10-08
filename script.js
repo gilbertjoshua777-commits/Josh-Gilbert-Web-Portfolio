@@ -18,7 +18,7 @@ const projects = [
         genre: "Course Projects",
         description: "A redesigned restaurant website focused on navigation, accessibility, visual presentation, and responsive design.",
         image: "images/delicious-eats-webpage-screenshot.jpg",
-        technologies: ["HTML", "CSS", "Git", "GitHub"],
+        technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
         liveSite: "https://gilbertjoshua777-commits.github.io/C2-Broken-Restaurant-Website-Assignment/",
         github: "https://github.com/gilbertjoshua777-commits/C2-Broken-Restaurant-Website-Assignment"
     },
