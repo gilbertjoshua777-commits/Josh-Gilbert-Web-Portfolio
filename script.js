@@ -4,17 +4,9 @@ const nextButton = document.querySelector("#next-category");
 let currentProject = 0;
 
 const projects = [
+    
     {
-        title: "Why Art Matters",
-        genre: "Course Projects",
-        description: "A single-page website exploring the importance of art during difficult times.",
-        image: "images/why-art-matters.jpg",
-        technologies: ["HTML", "CSS", "Git", "GitHub"],
-        liveSite: "https://gilbertjoshua777-commits.github.io/my-first-html-project/",
-        github: "https://github.com/gilbertjoshua777-commits/my-first-html-project"
-    },
-    {
-        title: "Fictional Restaurant Page Update",
+        title: "Delicious Eats Restaurant Site",
         genre: "Course Projects",
         description: "A redesigned restaurant website focused on navigation, accessibility, visual presentation, and responsive design.",
         image: "images/delicious-eats-webpage-screenshot.jpg",
