@@ -74,10 +74,10 @@ projectList.innerHTML = `
             }).join("")}
         </ul>
 
-        <p>
+        
+<p>
     <a href="${project.liveSite}" target="_blank">Live Site</a> |
-    <a href="${project.github}" target="_blank">GitHub Repository</a> |
-    <a href="${project.figma}" target="_blank">Figma Design</a>
+    <a href="${project.github}" target="_blank">GitHub Repository</a>${project.figma ? ' | <a href="' + project.figma + '" target="_blank">Figma Design</a>' : ""}
 </p>
 
     </section>
